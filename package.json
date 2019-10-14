@@ -1,0 +1,33 @@
+{
+  "name": "json-stringify-cli",
+  "version": "1.0.1",
+  "main": "src/index.js",
+  "bin": {
+    "json-stringify": "bin/json-stringify.js",
+    "json-stringify-ts": "bin/json-stringify-ts.js"
+  },
+  "repository": "ssh://git@github.com/euxn23/json-stringify-cli.git",
+  "author": "euxn23 <euxn23@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "json",
+    "stringify",
+    "cli"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepare": "npmignore-aggregate && npm run build"
+  },
+  "dependencies": {
+    "prettier": "^1.18.2",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "@types/prettier": "^1.18.3",
+    "@types/yargs": "^13.0.3",
+    "npmignore-aggregate": "^1.0.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
